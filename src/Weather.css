@@ -1,3 +1,17 @@
 .Weather {
   border: 1px solid grey;
 }
+
+.Weather li {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+}
+
+.Weather img {
+  height: 64 px;
+  width: 64px;
+  margin-right: 10px;
+  display: inline-block;
+}
