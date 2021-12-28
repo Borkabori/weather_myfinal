@@ -4,13 +4,13 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather(props) {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
     console.log(response.data);
-    setReady(true);
+
     setWeatherData({
+      ready: true,
       city: response.data.name,
       temperature: response.data.main.temp,
       felttemp: response.data.main.feels_like,
@@ -23,7 +23,7 @@ export default function Weather(props) {
     });
   }
 
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <div className="Weather">
         <form>
