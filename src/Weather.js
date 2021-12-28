@@ -18,8 +18,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
-      icon: response.data.weather[0].icon,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       date: new Date(response.data.dt * 1000),
     });
   }
@@ -52,7 +51,7 @@ export default function Weather(props) {
           <div className="col-6">
             <div className="clearfix">
               <img
-                src={weatherData.icon}
+                src={weatherData.iconUrl}
                 alt={weatherData.description}
                 className="float-left"
               />
