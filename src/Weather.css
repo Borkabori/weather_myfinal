@@ -15,3 +15,20 @@
   margin-right: 10px;
   display: inline-block;
 }
+
+.Weather .temperature {
+  font-weight: bold;
+  color: rgb(33, 33, 33);
+  font-size: 42px;
+  line-height: 64px;
+  font-weight: 400;
+}
+
+.Weather .unit {
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+}

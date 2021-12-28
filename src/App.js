@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
+        <Weather defaultCity="Budapest" />
         <footer>
           This project was created by Borbála Birgés and is{" "}
           <a href="https://github.com/Borkabori/weather_myfinal" target="blank">
